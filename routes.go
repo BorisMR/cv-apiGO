@@ -15,9 +15,27 @@ type Routes []Route
 var routes = Routes{
 
 	Route{
+		"Full",
+		"GET",
+		"/full",
+		Full,
+	},
+	Route{
 		"Contact",
 		"GET",
-		"/",
+		"/contact",
 		Contact,
+	},
+	Route{
+		"Laboral",
+		"GET",
+		"/laboral",
+		Laboral,
+	},
+	Route{
+		"Academic",
+		"GET",
+		"/academic",
+		Academic,
 	},
 }
