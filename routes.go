@@ -2,7 +2,6 @@ package main
 
 import "net/http"
 
-
 type Route struct {
 	Name        string
 	Method      string
@@ -13,7 +12,7 @@ type Route struct {
 type Routes []Route
 
 var routes = Routes{
-
+	
 	Route{
 		"Full",
 		"GET",

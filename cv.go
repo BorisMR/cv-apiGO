@@ -39,6 +39,13 @@ var cvs = CVs{
 		"Garibaldi 0935",
 		Background {
 			exp {
+				"Web developer",
+				"Instituto de Informatica Educativa",
+				"Chile, Temuco",
+				"2017 - >",
+				"I Worked as a frontend and backend on platforms from Endfid-2017 a national teachers knowledgment validation process, also I made Scripts development to automatize personal reports generation",
+			},
+			exp {
 				"Software developer",
 				"Lirmi Chile SPA",
 				"Chile, Temuco",
