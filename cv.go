@@ -1,17 +1,17 @@
 package main
 
-type CVs []Cv
+type CVs []cv
 
-type Cv struct {
-	Name        string `json:"name"`
-	Phone       string `json:"phone"`
-	Email       string `json:"email"`
-	Address     string `json:"address"`
-	Background  []exp
-	Education   []edu
+type cv struct {
+	Name       string `json:"name"`
+	Phone      string `json:"phone"`
+	Email      string `json:"email"`
+	Address    string `json:"address"`
+	Background []exp
+	Education  []edu
 }
 
-type Background []exp
+type background []exp
 
 type exp struct {
 	Position    string `json:"position"`
@@ -21,7 +21,7 @@ type exp struct {
 	Description string `json:"description"`
 }
 
-type Education []edu
+type education []edu
 
 type edu struct {
 	Degree      string `json:"degree"`
@@ -29,51 +29,57 @@ type edu struct {
 	Year        string `json:"year"`
 }
 
-//mock object
+//mock object for testing purposes
 var cvs = CVs{
-
-	Cv{
+	cv{
 		"Boris Morales Rios",
 		"+56 9 45296652",
 		"anum.bmr.01@gmail.com",
 		"Garibaldi 0935",
-		Background {
-			exp {
+		background{
+			exp{
+				"Software developer",
+				"CyM Contulmo",
+				"Chile, Temuco",
+				"2017 - 2019",
+				"I Work here as a full-stack developer, using tracking technologies for public transport management",
+			},
+			exp{
 				"Web developer",
 				"Instituto de Informatica Educativa",
 				"Chile, Temuco",
-				"2017 - >",
+				"2017 - 2019",
 				"I Worked as a frontend and backend on platforms from Endfid-2017 a national teachers knowledgment validation process, also I made Scripts development to automatize personal reports generation",
 			},
-			exp {
+			exp{
 				"Software developer",
 				"Lirmi Chile SPA",
 				"Chile, Temuco",
 				"2016 - 2017",
 				"I did my main internship developing a module for a teaching planification assistant platform, this module does feedback improvements on planification tasks.",
 			},
-			exp {
+			exp{
 				"Internship II",
 				"Instituto de Informatica Educativa",
 				"Chile, Temuco",
 				"2016 - 2016",
 				"I did my first internship doing tasks related to Information Security",
 			},
-			exp {
+			exp{
 				"Internship I",
 				"Instituto de Informatica Educativa",
 				"Chile, Temuco",
 				"2015 - 2016",
 				"I did my first internship as developer in the project Academia PSU working in a webapp used to provide effective follow-up from class sessions",
 			},
-			exp {
+			exp{
 				"Assistant",
 				"Instituto de Informatica Educativa",
 				"Chile, Temuco",
 				"2014 - 2014",
 				"TICEdu project assistant, developing scripts in JavaScript and performing analysis of audio using a voice recognition tool derived from LIUM.",
 			},
-			exp {
+			exp{
 				"Assistant",
 				"Instituto de Informatica Educativa",
 				"Chile, Temuco",
@@ -81,13 +87,13 @@ var cvs = CVs{
 				"TEDI project assistant, developing tools for an digital interactive schoolar books platform.",
 			},
 		},
-		Education {
-			edu {
+		education{
+			edu{
 				"Computer Science / Information Systems",
 				"University of the Frontier",
 				"2016",
 			},
-			edu {
+			edu{
 				"Licentiate in Engineering Sciences",
 				"University of the Frontier",
 				"2016",
