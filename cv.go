@@ -41,7 +41,7 @@ var cvs = CVs{
 				"Software developer",
 				"CyM Contulmo",
 				"Chile, Temuco",
-				"2017 - 2019",
+				"2019 - present",
 				"I Work here as a full-stack developer, using tracking technologies for public transport management",
 			},
 			exp{
